@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app>
 <head>
-    <script src="eg1.js"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.0rc6/angular-1.0.0rc6.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript">
         $(function(){
@@ -17,7 +16,9 @@
     <title></title>
 </head>
 <body>
-<input id="name" type="text">
+<input id="name" type="text"/>
 <h2 id="greeting"></h2>
+<input type="text" ng-model="name1"/>
+<h2>Hello {{name1}} !</h2>
 </body>
 </html>
